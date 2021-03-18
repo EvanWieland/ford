@@ -6,7 +6,6 @@ import mustang from './assets/images/mustang.png';
 import mustangBronco from './assets/images/mustang-bronco.png';
 import ford from './assets/images/ford.png';
 
-
 const messages = {
     BRONCO: {
         message: "Bronco",
