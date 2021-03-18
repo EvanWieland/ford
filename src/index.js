@@ -56,7 +56,7 @@ function run() {
 }
 
 // Validate input
-integerInputEl.addEventListener('change', () => {
+integerInputEl.addEventListener('input', () => {
     const inputVal = integerInputEl.value.trim();
 
     if (!inputVal // Catch blank input
@@ -69,7 +69,6 @@ integerInputEl.addEventListener('change', () => {
         runBtnEl.disabled = false;
         validationErrorEl.style.display = 'none';
     }
-
 });
 
 // Listen for button click to run the algorithm
