@@ -1,0 +1,151 @@
+@import "~normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap');
+
+:root {
+    --ford-blue: #01357a;
+    --ford-blue-dark: #092a46;
+    --ford-blue-light: #0556BF;
+    --error: #BA4500;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--ford-blue-dark);
+    background-image: linear-gradient(90deg, var(--ford-blue-dark) 45%, var(--ford-blue) 100%);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    height: 100%;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    background-color: var(--ford-blue-light);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    padding: 0.25em 0.75em;
+    margin-top: 1em;
+    min-width: 10ch;
+    min-height: 44px;
+    text-align: center;
+    line-height: 1.1;
+    transition: 220ms all ease-in-out;
+}
+
+button:disabled {
+    box-shadow: none;
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+input[type=number] {
+    display: block;
+    width: 100%;
+    min-width: 10em;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: 220ms border-color;
+}
+
+.validation-error {
+    display: none;
+    color: var(--error);
+}
+
+.light {
+    font-weight: 200;
+}
+
+.hero {
+    color: white;
+    margin: 0 auto;
+}
+
+.hero .hero-subject {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.awesome {
+    margin-left: 0.25em;
+    padding: 0.5em 0 0.5em 0.5em;
+    border-left: 2px solid white;
+}
+
+.awesome > p {
+    margin: 0;
+}
+
+.awesome > p:first-of-type {
+    margin-bottom: 0.5em;
+}
+
+.panel {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 2em 0 2em 0;
+}
+
+@media (min-width: 670px) {
+    .panels {
+        display: flex;
+        height: 100%;
+    }
+
+    .panel{
+        padding-top: 5em;
+    }
+}
+
+.panel:first-of-type {
+    flex-grow: .15;
+    margin-right: 0;
+}
+
+.panel:last-of-type {
+    align-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 20em;
+    text-align: center;
+    margin-top: 60px;
+    padding: 0 2em 2em 2em;
+    box-shadow: 0 7px 30px -10px rgba(76, 85, 92, 0.5);
+}
+
+.card-content {
+    position: relative;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.car {
+    width: 100%;
+    margin-top: -60px;
+}
+
+.declare {
+    color: var(--ford-blue);
+}
