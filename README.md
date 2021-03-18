@@ -2,7 +2,7 @@
 
 I decided to use JavaScript to code this exercise.
 
-The GUI can be viewed at ***.
+The GUI can be viewed at https://ford.bitsmithy.io/.
 
 The source code for the algorithm can be found at `./src/index.js`.
 
