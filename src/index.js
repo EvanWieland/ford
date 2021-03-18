@@ -56,7 +56,7 @@ function run() {
 }
 
 // Validate input
-integerInputEl.addEventListener('keyup', () => {
+integerInputEl.addEventListener('change', () => {
     const inputVal = integerInputEl.value.trim();
 
     if (!inputVal // Catch blank input
