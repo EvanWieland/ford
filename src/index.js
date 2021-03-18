@@ -71,5 +71,15 @@ integerInputEl.addEventListener('input', () => {
     }
 });
 
+// Watch for "Enter" key press
+integerInputEl.addEventListener('keyup', event => {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        // Trigger run button press
+        runBtnEl.click();
+    }
+});
+
 // Listen for button click to run the algorithm
 runBtnEl.addEventListener('click', () => run());
