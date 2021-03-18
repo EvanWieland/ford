@@ -1,5 +1,7 @@
 ## Coding Exercise #2
 
+![Sample](sample.png)
+
 I decided to use JavaScript to code this exercise.
 
 The GUI can be viewed at https://ford.bitsmithy.io/.
